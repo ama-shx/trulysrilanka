@@ -21,26 +21,28 @@
 
 <h3>Book Your Trip</h3>
 
-<form>
-    <input type="text" placeholder="Full Name" required><br>
-    <input type="email" placeholder="Email" required><br>
-    <select>
-        <option>Select Package</option>
-        <option>3-Day Tour</option>
-        <option>5-Day Beach</option>
-        <option>7-Day Hill</option>
-        <option>10-Day Tour</option>
+<form action="https://formspree.io/f/myklwaea" method="POST">
+    
+    <input type="text" name="full_name" placeholder="Full Name" required><br>
+    
+    <input type="email" name="email" placeholder="Email" required><br>
+    
+    <select name="package">
+        <option value="">Select Package</option>
+        <option value="3-day">3-Day Tour</option>
+        <option value="5-day-beach">5-Day Beach</option>
+        <option value="7-day-hill">7-Day Hill</option>
+        <option value="10-day">10-Day Tour</option>
     </select><br>
-    <textarea placeholder="Additional Requests"></textarea><br>
+    
+    <textarea name="message" placeholder="Additional Requests"></textarea><br>
+    
     <button type="submit">Submit</button>
 </form>
 
 <h3>Our Location</h3>
 
-<iframe 
-    src="https://www.google.com/maps?q=Colombo,SriLanka&output=embed"
-    width="80%" height="300">
-</iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15830.119800090615!2d79.8383319!3d7.294196400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1776499184485!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </section>
 
